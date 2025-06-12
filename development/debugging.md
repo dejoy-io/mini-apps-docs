@@ -1,14 +1,14 @@
 # Debugging
-Application development is rather hard and continous process which requires a lot of time and patience. To simplify it, the Dejoy Mini Apps platform allows debugging developed application.
+Application development is rather hard and continous process which requires a lot of time and patience. To simplify it, the DeJoy Mini Apps platform allows debugging developed application.
 
 ## Enabling Debug Mode
-### Dejoy for Android
+### DeJoy for Android
 - Enable USB-Debugging on your device.
-- In Dejoy Settings, scroll all the way down, press and hold on the version number two times.
+- In DeJoy Settings, scroll all the way down, press and hold on the version number two times.
 - Choose Enable WebView Debug in the Debug Settings.
 - Connect your phone to your computer and open chrome://inspect/#devices in Chrome – you will see your Mini App there when you launch it on your phone.
 
-### Dejoy for iOS
+### DeJoy for iOS
 iOS webview debugging requires Safari desktop browser and therefore macOS.
 
 To access iOS debugging features without macOS, refer to the [Eruda](./debugging.md#Eruda) section.
@@ -30,11 +30,11 @@ On macOS:
 Next steps:
 
 - Connect iOS device to Mac via cable.
-- Open Mini App inside iOS Dejoy client.
+- Open Mini App inside iOS DeJoy client.
 - Open Develop tab in the menu bar in Safari on macOS.
 - Select connected iPhone.
 - Optional: select Connect via network and disconnect the cable.
-- Select opened webview URL under Dejoy block.
+- Select opened webview URL under DeJoy block.
 
 ## Eruda
 Eruda is a technology that provides a lightweight console in the web. We typically use such packages in environments that don't offer their own consoles.

@@ -1,5 +1,5 @@
 # Events
-Events are signals, sent from Dejoy native application in case, when some external action was done. Like methods, each event has its unique name and parameters.
+Events are signals, sent from DeJoy native application in case, when some external action was done. Like methods, each event has its unique name and parameters.
 
 # Web
 As mentioned before, the web version uses a standard way of communication between iframes. It means, the parent iframe is able to send events through window.postMessage function. To handle this type of message, it is enough to add message event listener on the global window object:
@@ -15,7 +15,7 @@ interface MessageJSON {
   eventData: any;
 }
 ```
-Then, lets imagine how we could process an event from Dejoy application:
+Then, lets imagine how we could process an event from DeJoy application:
 
 ```
 window.addEventListener('message', ({ data }) => {
@@ -29,7 +29,7 @@ WARNING
 In this code, we assumed, that the message event is sent only by the native application which is not always true in real applications. Additionally, we didn't check if data is really of type string. Don't forget to check each type and appropriately process incoming events.
 
 ## Desktop, Mobile and Windows Phone
-Desktop, mobile, and Windows Phone versions of Dejoy don’t use the method, described in the previous section. They do it in a bit unusual way. The first thing developer should know, is in case, when Dejoy needs to emit an event, it will insert JavaScript code, which calls a globally defined function.
+Desktop, mobile, and Windows Phone versions of DeJoy don’t use the method, described in the previous section. They do it in a bit unusual way. The first thing developer should know, is in case, when DeJoy needs to emit an event, it will insert JavaScript code, which calls a globally defined function.
 ```
 
 Here is an example:
@@ -41,8 +41,8 @@ window.Telegram.WebView.receiveEvent('popup_closed', {
 ```
 Path to this function depends on platform:
 
-- window.TelegramGameProxy.receiveEvent - Dejoy Desktop;
-- window.Telegram.WebView.receiveEvent - Dejoy for iOS and Android;
+- window.TelegramGameProxy.receiveEvent - DeJoy Desktop;
+- window.Telegram.WebView.receiveEvent - DeJoy for iOS and Android;
 - window.TelegramGameProxy_receiveEvent - Windows Phone
 
 All of these functions have the same signature:
@@ -75,7 +75,7 @@ removeListener();
 You can learn more about calling methods in the package's [documentation](https://docs.telegram-mini-apps.com/packages/telegram-apps-bridge/events#listening-to-events).
 
 ## Available Events
-This section contains the list of events, sent from Dejoy: their names, description, and parameters. Section title means minimal version, from which events inside the section could be sent.
+This section contains the list of events, sent from DeJoy: their names, description, and parameters. Section title means minimal version, from which events inside the section could be sent.
 
 ### accelerometer_changed
 Available since: v8.0
@@ -150,7 +150,7 @@ Biometry token was updated.
 ### clipboard_text_received
 Available since: v6.4
 
-Dejoy application attempted to extract text from clipboard.
+DeJoy application attempted to extract text from clipboard.
 
 | Field |	Type |	Description |
 -|-|-
@@ -160,11 +160,11 @@ Dejoy application attempted to extract text from clipboard.
 ### content_safe_area_changed
 Available since: v8.0
 
-This event occurs whenever the content safe area changes in the user's Dejoy app. For instance, when a user switches to landscape mode.
+This event occurs whenever the content safe area changes in the user's DeJoy app. For instance, when a user switches to landscape mode.
 
-The safe area ensures that content does not overlap with Dejoy's UI elements.
+The safe area ensures that content does not overlap with DeJoy's UI elements.
 
-The content safe area is a subset of the device's safe area, specifically covering Dejoy's UI.
+The content safe area is a subset of the device's safe area, specifically covering DeJoy's UI.
 
 | Field |	Type |	Description
 |-|-|-|
@@ -400,7 +400,7 @@ Parent iframe requested current iframe reload.
 ### safe_area_changed
 Available since: v8.0
 
-This event occurs whenever the safe area changes in the user's Dejoy app, such as when the user switches to landscape mode.
+This event occurs whenever the safe area changes in the user's DeJoy app, such as when the user switches to landscape mode.
 
 The safe area prevents content from overlapping with system UI elements like notches or navigation bars.
 
@@ -422,7 +422,7 @@ Available since: v7.10
 A user clicked the Secondary Button.
 
 set_custom_style
-The event which is usually sent by the Dejoy web application. Its payload represents <style/> tag html content, a developer could use. The stylesheet described in the payload will help the developer to stylize the app scrollbar (but he is still able to do it himself).
+The event which is usually sent by the DeJoy web application. Its payload represents <style/> tag html content, a developer could use. The stylesheet described in the payload will help the developer to stylize the app scrollbar (but he is still able to do it himself).
 
 ### settings_button_pressed
 Available since: v6.1
@@ -430,7 +430,7 @@ Available since: v6.1
 Occurs whenever the Settings Button was pressed.
 
 ### theme_changed
-Occurs whenever the theme was changed in the user's Dejoy app (including switching to night mode).
+Occurs whenever the theme was changed in the user's DeJoy app (including switching to night mode).
 
 Field	 | Type |	Description
 -|-|-
@@ -454,7 +454,7 @@ Pay attention to the fact, that send rate of this method is not enough to smooth
 ### visibility_changed
 Available since: v8.0
 
-Active state assumes that the native Dejoy client is currently working with the current mini application. It is important to note that this is not related to the mini application’s visibility, but rather its selection among other currently opened mini applications.
+Active state assumes that the native DeJoy client is currently working with the current mini application. It is important to note that this is not related to the mini application’s visibility, but rather its selection among other currently opened mini applications.
 
 Field |	Type |	Description
 -|-|-

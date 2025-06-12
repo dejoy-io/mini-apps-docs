@@ -8,7 +8,7 @@ An example of the use case of this component is sending data. For example, a Min
 
 This is a moderately sized yet simple component that offers limited functionality. The developer has the ability to control the button text, its active state, button and inner loader visibility. It is also possible to update text and background colors.
 
-To update any of the Main Button properties, Dejoy Mini Apps provides the [web_app_setup_main_button](../apps-communication/methods.md#web_app_setup_main_button) method. When user clicks the Main Button, Dejoy application emits the [main_button_pressed](../apps-communication/events.md#main_button_pressed) event.
+To update any of the Main Button properties, DeJoy Mini Apps provides the [web_app_setup_main_button](../apps-communication/methods.md#web_app_setup_main_button) method. When user clicks the Main Button, DeJoy application emits the [main_button_pressed](../apps-communication/events.md#main_button_pressed) event.
 
 ```
 TIP

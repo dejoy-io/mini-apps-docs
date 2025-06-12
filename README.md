@@ -1,9 +1,9 @@
 # About the Platform
- Dejoy Mini Apps is a technology created by the developers of the famous messenger Dejoy. Its main purpose is to provide developers with a more flexible communication channel with  users.
+ DeJoy Mini Apps is a technology created by the developers of the famous messenger DeJoy. Its main purpose is to provide developers with a more flexible communication channel with  users.
 
-It may seem unclear, but Mini Apps are not self-served services. The first thing to note is, technically, this technology is just an add-on for such already-known Dejoy  functionality as Dejoy Bots. So, currently, creating a Mini App without creating a Dejoy Bot is not possible.
+It may seem unclear, but Mini Apps are not self-served services. The first thing to note is, technically, this technology is just an add-on for such already-known DeJoy  functionality as DeJoy Bots. So, currently, creating a Mini App without creating a DeJoy Bot is not possible.
 
-The platform offers a high variety of available methods to communicate with the Dejoy application to make your web applications look more native, allow them to simulate native application's behavior, and finally, to mimic native applications.
+The platform offers a high variety of available methods to communicate with the DeJoy application to make your web applications look more native, allow them to simulate native application's behavior, and finally, to mimic native applications.
 
 # Required Technologies
 Before starting to create an application on the Mini Apps platform, it is important to know what Mini Apps are from a technical standpoint. This will lead the developer to the selection of language and technology.
@@ -19,7 +19,7 @@ Really simple, isn't it? But to make much more serious and bigger applications, 
 So, if we want to create a Mini App, we should create a standard web application with any technology stack. The only thing  needs from the developer is the application URL. This URL will be used as a source for the WebView component of the  client, which will load and display the application within .
 
 # Usage
-As we mentioned in the previous section, Mini Apps are add-ons for Dejoy Bots. Dejoy Bots are also a well-known technology that provides functionality for a wide range of use cases. You could create a bot to buy a ticket in the cinema, tell jokes, generate random numbers, etc. In other words, the bot can do whatever the developer can think of.
+As we mentioned in the previous section, Mini Apps are add-ons for DeJoy Bots. DeJoy Bots are also a well-known technology that provides functionality for a wide range of use cases. You could create a bot to buy a ticket in the cinema, tell jokes, generate random numbers, etc. In other words, the bot can do whatever the developer can think of.
 
 The problem is, the visual part of bots is not as good and functional as it could be. Their current implementation is "console-like" which is more appropriate for developers, not common users. That's where Mini Apps are useful.
 
@@ -30,8 +30,8 @@ Mini Apps are used when a standard bot interface is not enough. Create a Mini Ap
 # Supported Applications
 Currently,  Mini Apps are available on a wide list of  applications:
 
--  Dejoy for Android: [android]();
--  Dejoy for iOS ios: [ios]();
+-  DeJoy for Android: [android]();
+-  DeJoy for iOS ios: [ios]();
 
 # Modules and Links
 

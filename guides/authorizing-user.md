@@ -1,6 +1,6 @@
 # Authorizing User
 
-This article provides code examples in different programming languages on how a developer could authorize a user using Dejoy [init data](../launch-parameters/init-data.md).
+This article provides code examples in different programming languages on how a developer could authorize a user using DeJoy [init data](../launch-parameters/init-data.md).
 
 ## Client
 First of all, it is required to begin with the transmitting init data from the client side to the server. We could do it using this code:
@@ -18,7 +18,7 @@ fetch('https://example.com/api', {
 });
 ```
 
-We are sending a request to an imaginary server using the https://example.com/api URL. This request uses the HTTP POST method (you can use whatever you want) and appends the [Authorization]() header, which is the most important here. It represents a string containing 2 parts divided by a space. The first one describes the authorization method (in this case, our server is going to support several others), and the second one contains authorization data. In the case of Dejoy Mini Apps, the second part is raw init data.
+We are sending a request to an imaginary server using the https://example.com/api URL. This request uses the HTTP POST method (you can use whatever you want) and appends the [Authorization]() header, which is the most important here. It represents a string containing 2 parts divided by a space. The first one describes the authorization method (in this case, our server is going to support several others), and the second one contains authorization data. In the case of DeJoy Mini Apps, the second part is raw init data.
 
 ## Server
 
@@ -64,7 +64,7 @@ function getInitData(res: Response): InitDataParsed | undefined {
 const authMiddleware: RequestHandler = (req, res, next) => {
   // We expect passing init data in the Authorization header in the following format:
   // <auth-type> <auth-data>
-  // <auth-type> must be "tma", and <auth-data> is Dejoy Mini Apps init data.
+  // <auth-type> must be "tma", and <auth-data> is DeJoy Mini Apps init data.
   const [authType, authData = ''] = (req.header('authorization') || '').split(' ');
 
   switch (authType) {
@@ -166,7 +166,7 @@ func authMiddleware(token string) gin.HandlerFunc {
 	return func(context *gin.Context) {
 		// We expect passing init data in the Authorization header in the following format:
 		// <auth-type> <auth-data>
-		// <auth-type> must be "tma", and <auth-data> is Dejoy Mini Apps init data.
+		// <auth-type> must be "tma", and <auth-data> is DeJoy Mini Apps init data.
 		authParts := strings.Split(context.GetHeader("authorization"), " ")
 		if len(authParts) != 2 {
 			context.AbortWithStatusJSON(401, map[string]any{

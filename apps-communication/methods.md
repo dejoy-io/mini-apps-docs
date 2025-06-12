@@ -1,8 +1,8 @@
 # Methods
-  Dejoy Mini Apps methods are events, which execute some predefined action. They are always called by a Mini App.
+  DeJoy Mini Apps methods are events, which execute some predefined action. They are always called by a Mini App.
 
 ## Web
-Since the web version of Dejoy displays the front-end application in an ```<iframe/>``` tag, it uses the default way of communication between 2 iframes - sending messages through ```window.parent.postMessage``` function.
+Since the web version of DeJoy displays the front-end application in an ```<iframe/>``` tag, it uses the default way of communication between 2 iframes - sending messages through ```window.parent.postMessage``` function.
 
 As the first parameter, you should pass a JSON object converted to a string. The object should have this interface:
 
@@ -13,7 +13,7 @@ interface MessageJSON {
 }
 ```
 
-The second parameter is ```targetOrigin``` - allowed parent iframe origin. We recommend avoiding the usage of wildcard ```*``` as long as it is not secure - your application could be inserted not by Dejoy, but by another iframe that will still be able to communicate with your app and receive some data.
+The second parameter is ```targetOrigin``` - allowed parent iframe origin. We recommend avoiding the usage of wildcard ```*``` as long as it is not secure - your application could be inserted not by DeJoy, but by another iframe that will still be able to communicate with your app and receive some data.
 
 As a default value, you could use https://dejoy.io.
 
@@ -72,7 +72,7 @@ You can learn more about calling methods in the package's [documentation](https:
 This section contains a list of available methods to call with their names, description, and parameters. In case, Mini App does not satisfy the minimal method version requirement, nothing will happen. The native app just doesn't know which method should be called as long as it is not defined internally.
 
 ### iframe_ready
-Notifies parent iframe about the current frame is ready. This method is only used in the Web version of Dejoy. As a result, Mini App will receive ```set_custom_style``` event.
+Notifies parent iframe about the current frame is ready. This method is only used in the Web version of DeJoy. As a result, Mini App will receive ```set_custom_style``` event.
 
 |Field|	Type	|Description
 |-|-|-|

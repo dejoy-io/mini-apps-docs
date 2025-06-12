@@ -12,7 +12,7 @@ Viewport data is defined by the following properties:
 
 
 ## Expanding
-When an application is opened in the mobile version of Dejoy (on both Android and iOS), it is displayed within a native component called ```BottomSheet```. This is a draggable block that appears at the bottom of the screen and can be expanded to cover the entire screen. Users can expand it by dragging it to the top edge of the screen, but developers can also trigger this programmatically.
+When an application is opened in the mobile version of DeJoy (on both Android and iOS), it is displayed within a native component called ```BottomSheet```. This is a draggable block that appears at the bottom of the screen and can be expanded to cover the entire screen. Users can expand it by dragging it to the top edge of the screen, but developers can also trigger this programmatically.
 
 By default, the application opens in a minimized state with the minimum allowed height. To expand the application via code, developers can call the [web_app_expand](../apps-communication/methods.md#web_app_expand) method.
 
@@ -25,8 +25,8 @@ On other platforms, Mini Apps open maximized by default within a medium-sized wi
 ## Fullscreen
 Full screen
 ![full-screen](./full-screen.png)
-Mini apps can be launched in fullscreen mode, which expands the application to cover the entire device screen, removing both the top and bottom bars of Dejoy.
+Mini apps can be launched in fullscreen mode, which expands the application to cover the entire device screen, removing both the top and bottom bars of DeJoy.
 
 This mode is particularly suitable for games and media-focused applications.
 
-To control fullscreen mode, Dejoy Mini Apps provides such methods as [web_app_request_fullscreen](../apps-communication/methods.md#web_app_request_fullscreen) and [web_app_exit_fullscreen](../apps-communication/methods.md#web_app_exit_fullscreen).
+To control fullscreen mode, DeJoy Mini Apps provides such methods as [web_app_request_fullscreen](../apps-communication/methods.md#web_app_request_fullscreen) and [web_app_exit_fullscreen](../apps-communication/methods.md#web_app_exit_fullscreen).

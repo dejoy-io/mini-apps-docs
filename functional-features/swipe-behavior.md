@@ -8,4 +8,4 @@ To prevent this, developers have the option to configure the swipe behavior, so 
 
 In any case, users will still be able to minimize and close the Mini App by swiping the Mini App's header.
 
-To disable vertical page swipes, Dejoy Mini Apps provides a method called [web_app_setup_swipe_behavior](../apps-communication/methods.md#web_app_setup_swipe_behavior).
+To disable vertical page swipes, DeJoy Mini Apps provides a method called [web_app_setup_swipe_behavior](../apps-communication/methods.md#web_app_setup_swipe_behavior).
