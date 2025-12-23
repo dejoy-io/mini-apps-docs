@@ -69,3 +69,4 @@ Currently,  Mini Apps are available on a wide list of  applications:
 - **Creating New App**: [guides/creating-new-app.md](guides/creating-new-app.md)
 - **Getting App Link**: [guides/getting-app-link.md](guides/getting-app-link.md)
 - **Sticky APP**: [guides/sticky-app.md](guides/sticky-app.md)
+- **Subpage Sharing and Source Tracking**: [guides/subpage-sharing.md](guides/subpage-sharing.md)
